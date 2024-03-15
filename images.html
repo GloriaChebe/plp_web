@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Images</title>
+  </head>
+  <body>
+    <img src="images/food.png" alt="burger " class="image-align" />
+
+    <!-- Aligning the Image -->
+    <img src="images/food.png" alt="delicious food" align="left" class="image-align" />
+
+    <!-- Size of the image   -->
+    <p>
+      <img
+        src="images/food.png"
+        alt="A cute Cat"
+        width="100"
+        height="100"
+        class="image-align"
+      />
+      This Some Text Around the Image
+    </p>
+    <!-- Styling the Image using CSS -->
+    <style>
+      .image-align {
+        margin: 10px;
+        float: left;
+        height: 100;
+        width: 100;
+      }
+    </style>
+
+    <!-- Image Links -->
+    <a href="https://www.google.com">
+      <img src="images/food.png" alt="delicious meal" class="image-align" />
+    </a>
+    <!-- Responsive Images   -->
+    <img src="images/food.png" alt="Description" style="max-width: 100%;">
+
+    <!-- How to Load Images from External Sources -->
+    <img
+      src="https://www.w3schools.com/images/w3schools_green.jpg"
+      alt="W3Schools.com"
+      style="width: 104px; height: 142px"
+    />
+    <!-- Lazy loading    -->
+    <img src="images/food.png" alt="delicious food" loading="lazy" class="image-align" />
+    <!-- Image Captioning -->
+    <figure>
+      <img src="images/food.png" alt="delicious food" class="image-align" />
+      <figcaption>This is a lot of food</figcaption>
+    </figure>
+    <!-- Retina and High-DPI Displays -->
+    <img src="images/food.png" alt="food" srcset="image.jpg 1px, image@2x.jpg 2x" />
+  </body>
+</html>
